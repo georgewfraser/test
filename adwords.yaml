@@ -1,7 +1,4 @@
-ADGROUP_PERFORMANCE_REPORT:
-  @table: _adgroup_performance
-  @key: [date, campaign_id, campaign_name, ad_group_id, ad_group_name]
-  
+_adgroup_performance:
   # Dimensions
   Date: date
   CampaignId: campaign_id
