@@ -1,29 +1,19 @@
-# Only sync the tables we select
-@sync: named # all, named
+salesforce:
+  # Selectively sync salesforce objects
+  Account: account
+  Lead: lead
+  Task:
+    id:
+    created:
+    status:
 
-# Table will be called _account in Redshift
-_account: 
-  # Sync the 'Account' object in salesforce
-  @source: Account
-  # Only sync the columns we specify
-  @sync: named
-  
-  id:
-    # Sync the 'Id' column
-    @source: Id
-  name:
-    # Sync the 'Name' column
-    @source: Name
-# Sync _lead from Lead    
-_lead: Lead
-
-
-# Views that get materialized by fivetran into tables
-@materialized_views:
-  view_name: 
-    query: |
-           SELECT FOO
-           FROM bar
-           WHERE x = y
-    min_refresh_interval: 1h 
+  # Views that get materialized by fivetran into tables
+  @materialized_views:
+    view_name: 
+      query: |
+             SELECT FOO
+             FROM bar
+             WHERE x = y
+      min_refresh_interval: '1h'
+      
     
