@@ -1,0 +1,6 @@
+pageviews:
+  dimensions: 
+    - date
+    - url
+  measures:
+    - pageViews
