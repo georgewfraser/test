@@ -1,4 +1,6 @@
+# Name of report in adwords
 ADGROUP_PERFORMANCE_REPORT:
+  # Name of table in redshift (doesn't correspond to anything in adwords)
   _adgroup_performance:
     # Dimensions
     Date: 
