@@ -1,1 +1,24 @@
-
+ADGROUP_PERFORMANCE_REPORT:
+  @table: _adgroup_performance
+  
+  # Dimensions
+  Date: 
+    @column: date
+    @key: true
+  CampaignId: 
+    @column: campaign_id
+    @key: true
+  CampaignName:  
+    @column: campaign_name
+    @key: true
+  AdGroupId:  
+    @column: ad_group_id
+    @key: true
+  AdGroupName:  
+    @column: ad_group_name
+    @key: true
+  
+  # Metrics
+  Impressions: impressions
+  Clicks: clicks
+  Cost: cost
