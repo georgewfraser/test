@@ -1,6 +1,8 @@
 pageviews:
-  dimensions: 
+  @account: foo
+  @property: 123
+  @dimensions: 
     - date
     - url
-  measures:
+  @measures:
     - pageViews
