@@ -1,12 +1,13 @@
-_adgroup_performance:
-  # Dimensions
-  Date: date
-  CampaignId: campaign_id
-  CampaignName: campaign_name
-  AdGroupId: ad_group_id
-  AdGroupName: ad_group_name
-  
-  # Metrics
-  Impressions: impressions
-  Clicks: clicks
-  Cost: cost
+ADGROUP_PERFORMANCE_REPORT:
+  _adgroup_performance:
+    # Dimensions
+    Date: date
+    CampaignId: campaign_id
+    CampaignName: campaign_name
+    AdGroupId: ad_group_id
+    AdGroupName: ad_group_name
+    
+    # Metrics
+    Impressions: impressions
+    Clicks: clicks
+    Cost: cost
