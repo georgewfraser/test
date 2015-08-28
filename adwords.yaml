@@ -1,22 +1,13 @@
 ADGROUP_PERFORMANCE_REPORT:
   @table: _adgroup_performance
+  @primary_key: [Date, CampaignId, CampaignName, AdGroupId, AdGroupName]
   
   # Dimensions
-  Date: 
-    @column: date
-    @key: true
-  CampaignId: 
-    @column: campaign_id
-    @key: true
-  CampaignName:  
-    @column: campaign_name
-    @key: true
-  AdGroupId:  
-    @column: ad_group_id
-    @key: true
-  AdGroupName:  
-    @column: ad_group_name
-    @key: true
+  Date: date
+  CampaignId: campaign_id
+  CampaignName: campaign_name
+  AdGroupId: ad_group_id
+  AdGroupName: ad_group_name
   
   # Metrics
   Impressions: impressions
