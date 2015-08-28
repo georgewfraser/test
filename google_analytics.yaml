@@ -1,8 +1,17 @@
-pageviews:
-  @account: foo
-  @property: 123
-  @dimensions: 
-    - date
-    - url
-  @measures:
-    - pageViews
+# By default, syncs to schema ga_123
+GA-123:
+  @schema: google_analytics
+  
+  pageviews:
+    date:
+    url:
+    pageViews:
+    
+GA-456:
+  @schema: google_analytics_2
+  
+  pageviews:
+    date:
+    url:
+    pageViews:
+  
