@@ -1,36 +1,35 @@
 # GA property id
 GA-123:
   # Sync to google_analytics instead of ga_123
-  @schema: google_analytics
-  
+  @name: google_analytics
+
   _sessions_by_country:
     # Dimensions
     date:
     hour:
     country:
-    
+
     # Metrics
     sessions:
     bounces:
     bounceRate:
     sessionDuration:
     hits:
-    
-# Another GA property id    
+
+# Another GA property id
 GA-456:
   # Sync to google_analytics_2 instead of ga_456
-  @schema: google_analytics_2
-  
+  @name: google_analytics_2
+
   _sessions_by_country:
     # Dimensions
     date:
     hour:
     country:
-    
+
     # Metrics
     sessions:
     bounces:
     bounceRate:
     sessionDuration:
     hits:
-  

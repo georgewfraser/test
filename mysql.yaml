@@ -1,21 +1,21 @@
 # By default, sync to redshift schema sync_fully_schema
-sync_fully_schema: 
+sync_fully_schema:
 
 # A schema whose name we want to change
 public: mysql
 
 # A schema where we only want to sync some tables
-sync_partially_schema: 
+sync_partially_schema:
   table_name:
   other_table:
-  
+
 # A schema where we want to sync only some tables, AND we want to change the name
 sync_partially_and_change_name:
-  @schema: changed_name
-  
+  @name: changed_name
+
   table_name:
-    @table: changed_name
+    @name: changed_name
     id:
     name:
-    
+
   other_table_n:
