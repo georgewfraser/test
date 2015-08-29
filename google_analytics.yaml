@@ -18,7 +18,7 @@ GA-123:
     
 # Another GA property id    
 GA-456:
-  # Sync to google_analytics instead of ga_123
+  # Sync to google_analytics_2 instead of ga_456
   @schema: google_analytics_2
   
   _sessions_by_country:
