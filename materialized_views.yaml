@@ -1,1 +1,29 @@
+# Name of schema
+salesforce:
+  # Name of view that Fivetran will create
+  view_name: 
+    # Query that will be used to generate view_name
+    @query: |
+           SELECT count(*) as "count"
+           FROM _account
+           WHERE not is_deleted
 
+    # By default, we'll re-run the query whenever the data changes
+    @refresh:
+      # Don't re-run if the query ran in the last 1 hour
+      @min: '1h'
+      # Re-run every 24 hours if the data doesn't change
+      @max: '24h'
+      
+  other_view:
+    @query: |
+           SELECT 
+             date_trunc('day', completed), as completion_date,
+             count(*) AS "count"
+           FROM _task
+           GROUP BY 1
+           ORDER BY 1
+    @refresh:
+      # Refresh at 1am pacific time
+      @when: '1:00 PT'
+      
