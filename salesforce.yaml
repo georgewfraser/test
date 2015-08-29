@@ -6,14 +6,5 @@ salesforce:
     id:
     created:
     status:
-
-  # Views that get materialized by fivetran into tables
-  @materialized_views:
-    view_name: 
-      query: |
-             SELECT FOO
-             FROM bar
-             WHERE x = y
-      min_refresh_interval: '1h'
       
     
