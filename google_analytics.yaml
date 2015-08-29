@@ -1,17 +1,35 @@
-# By default, syncs to schema ga_123
+# GA property id
 GA-123:
+  # Sync to google_analytics instead of ga_123
   @schema: google_analytics
   
-  pageviews:
+  _sessions_by_country:
+    # Dimensions
     date:
-    url:
-    pageViews:
+    hour:
+    country:
     
+    # Metrics
+    sessions:
+    bounces:
+    bounceRate:
+    sessionDuration:
+    hits:
+# Another GA property id    
 GA-456:
+  # Sync to google_analytics instead of ga_123
   @schema: google_analytics_2
   
-  pageviews:
+  _sessions_by_country:
+    # Dimensions
     date:
-    url:
-    pageViews:
+    hour:
+    country:
+    
+    # Metrics
+    sessions:
+    bounces:
+    bounceRate:
+    sessionDuration:
+    hits:
   
