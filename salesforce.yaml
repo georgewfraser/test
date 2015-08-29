@@ -1,7 +1,7 @@
 salesforce:
   # Selectively sync salesforce objects
-  Account: account
-  Lead: lead
+  Account: _account
+  Lead: _lead
   Task:
     id:
     created:
